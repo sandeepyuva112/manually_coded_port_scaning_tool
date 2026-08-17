@@ -7,7 +7,7 @@ ports are the access point in the network.
 - Service → the person/business behind that door
 - Port scanner → someone checking which doors respond
 
-For example:
+## For example:
 
 ```
 Target: 192.168.1.10
@@ -19,7 +19,7 @@ Port     State
 23       CLOSED
 
 ```
-Conceptually:
+## Conceptually:
 
 ```
 Scanner
@@ -33,7 +33,7 @@ Scanner
    |  response
 
 ```
-TCP scanner flow
+## TCP scanner flow
 
 ```
 Target IP
@@ -56,7 +56,7 @@ Success     Refused/timeout
 
 ```
 
-architecture :
+## architecture :
 
 ```
                     TCP PORT SCANNER
@@ -90,4 +90,49 @@ architecture :
           ↓
       Final Report
 
+```
+## structer :
+
+```
+manually_coded_port_scaning_tool/
+   |
+   |──tcp-port-scanner/
+   │    │
+   │    ├── src/
+   │    │   ├── main.py
+   │    │   │
+   │    │   ├── scanner/
+   │    │   │   ├── __init__.py
+   │    │   │   ├── tcp_scanner.py
+   │    │   │   ├── connection.py
+   │    │   │   └── result.py
+   │    │   │
+   │    │   ├── utils/
+   │    │   │   ├── __init__.py
+   │    │   │   ├── validators.py
+   │    │   │   └── logger.py
+   │    │   │
+   │    │   └── output/
+   │    │       ├── __init__.py
+   │    │       ├── terminal.py
+   │    │       └── report.py
+   │    │
+   │    ├── tests/
+   │    │   ├── test_tcp_scanner.py
+   │    │   ├── test_validators.py
+   │    │   └── test_output.py
+   │    │
+   │    ├── docs/
+   │    │   ├── tcp-concepts.md
+   │    │   ├── architecture.md
+   │    │   └── testing.md
+   │    │
+   │    └── reports/
+   │    
+   ├── requirements.txt
+   ├── README.md
+   ├── LICENSE
+   ├── .gitignore
+   └── pyproject.toml
+   
 ```
