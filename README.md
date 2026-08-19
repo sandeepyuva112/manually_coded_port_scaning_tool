@@ -94,7 +94,7 @@ Success     Refused/timeout
 ## structer :
 
 ```
-manually_coded_port_scaning_tool/
+tcp_port_scannerl/
    |
    |──tcp-port-scanner/
    │    │
