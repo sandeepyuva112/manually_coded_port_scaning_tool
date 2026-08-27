@@ -1,6 +1,6 @@
 # TCP Port Scanner
 
-A simple and modular **TCP port scanner written in Python** for learning network scanning, TCP connections, port enumeration, input validation, logging, and report generation.
+A simple and modular **TCP port scanner written in Python**  for learning network scanning, TCP connections, port enumeration, input validation, logging, and report generation.
 
 The scanner attempts TCP connections to specified ports and reports which ports are accepting connections.
 
